@@ -25,7 +25,7 @@
     "tap": "~0.4.3",
     "browserify": "~2.25.0"
   },
-  "keywords": [],
+  "keywords": [ "async", "reduce", "accumulate", "accumulator", "browser", "browserify", "iterate", "iterator", "initial" ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
