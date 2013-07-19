@@ -35,7 +35,15 @@ asyncReduce(
 
 #### With [browserify](https://github.com/substack/node-browserify)
 
-You are all 
+You are all good.
+
+#### Without browserify
+
+Two options:
+
+  - run [browserify --standalone](https://github.com/substack/node-browserify#usage) after installing this package via
+    npm
+  - TODO: browserify-cdn
 
 ## API
 
