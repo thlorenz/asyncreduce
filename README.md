@@ -27,6 +27,15 @@ asyncReduce(
 );
 ```
 
+```
+sizes:
+ { '.gitignore': 97,
+  '.jshintrc': 249,
+  '.travis.yml': 48,
+  'index.js': 1534,
+  'Readme.md': 2160 }
+```
+
 ## Features
 
 - super small library built on top of also quite small [runnel](https://github.com/thlorenz/runnel)
