@@ -1,11 +1,5 @@
-# async-reduce
-[![build status](https://secure.travis-ci.org/thlorenz/async-reduce.png)](http://travis-ci.org/thlorenz/async-reduce)
+'use strict';
 
-[![testling badge](https://ci.testling.com/thlorenz/async-reduce.png)](https://ci.testling.com/thlorenz/async-reduce)
-
-Reduce an array of values via an asynchronous function.
-
-```js
 var fs = require('fs');
 var path = require('path');
 var asyncReduce = require('..');
@@ -28,15 +22,4 @@ asyncReduce(
       console.log('sizes:\n', acc);
     }
 );
-```
 
-## Installation
-
-    npm install async-reduce
-
-## API
-
-
-## License
-
-MIT

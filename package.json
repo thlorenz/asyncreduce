@@ -15,7 +15,9 @@
     "url": "git://github.com/thlorenz/async-reduce.git"
   },
   "homepage": "https://github.com/thlorenz/async-reduce",
-  "dependencies": {},
+  "dependencies": {
+    "runnel": "~0.5.0"
+  },
   "devDependencies": {
     "nave": "~0.4.3",
     "tape": "~1.0.4",
