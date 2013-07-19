@@ -1,6 +1,6 @@
 {
   "name": "async-reduce",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Reduce an array of values via an asynchronous function.",
   "main": "index.js",
   "scripts": {
