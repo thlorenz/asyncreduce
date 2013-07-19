@@ -46,9 +46,10 @@ You are all good.
 
 Two options:
 
-  - run [browserify --standalone](https://github.com/substack/node-browserify#usage) after installing this package via
-    npm
-  - TODO: browserify-cdn
+- run [browserify --standalone](https://github.com/substack/node-browserify#usage) after installing this package via
+  npm
+- download the [asyncreduce standalone version](http://wzrd.in.nyud.net/standalone/asyncreduce), powered by
+  [browserify as a service](http://wzrd.in.nyud.net)
 
 ## API
 
