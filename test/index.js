@@ -11,7 +11,7 @@ if (typeof window === 'undefined') {
   test('\nreducing files to a hash with their modes', function (t) {
     t.plan(2)
     asyncReduce(
-        [ 'test', 'examples', '.travis.yml', 'index.js', 'Readme.md' ]
+        [ 'test', 'examples', '.travis.yml', 'index.js' ]
       , {}
       , function size (acc, file, cb) {
           var p = path.join(__dirname, '..', file);
@@ -30,8 +30,7 @@ if (typeof window === 'undefined') {
             , { test: 16877,
                 examples: 16877,
                 '.travis.yml': 33188,
-                'index.js': 33188,
-                'Readme.md': 33188 }
+                'index.js': 33188 }
           )
         }
     )
@@ -44,8 +43,7 @@ test('\nsimulate reducing files to a hash with their modes', function (t) {
     test          :  16877,
     examples      :  16877,
     '.travis.yml' :  33188,
-    'index.js'    :  33188,
-    'Readme.md'   :  33188 }
+    'index.js'    :  33188 }
 
   asyncReduce(
       [ 'test', 'examples', '.travis.yml', 'index.js' ]
