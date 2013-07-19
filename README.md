@@ -1,11 +1,11 @@
-# async-reduce [![build status](https://secure.travis-ci.org/thlorenz/async-reduce.png)](http://travis-ci.org/thlorenz/async-reduce)
+# asyncreduce [![build status](https://secure.travis-ci.org/thlorenz/asyncreduce.png)](http://travis-ci.org/thlorenz/asyncreduce)
 
 Reduce an array of values via an asynchronous function.
 
 ```js
 var fs = require('fs');
 var path = require('path');
-var asyncReduce = require('..');
+var asyncReduce = require('asyncreduce);
 
 asyncReduce(
     [ '.gitignore', '.jshintrc', '.travis.yml', 'index.js', 'Readme.md' ]
@@ -29,7 +29,7 @@ asyncReduce(
 
 ## Installation
 
-    npm install async-reduce
+    npm install asyncreduce
 
 ### In the browser
 

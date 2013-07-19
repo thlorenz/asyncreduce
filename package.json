@@ -1,5 +1,5 @@
 {
-  "name": "async-reduce",
+  "name": "asyncreduce",
   "version": "0.0.1",
   "description": "Reduce an array of values via an asynchronous function.",
   "main": "index.js",
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thlorenz/async-reduce.git"
+    "url": "git://github.com/thlorenz/asyncreduce.git"
   },
-  "homepage": "https://github.com/thlorenz/async-reduce",
+  "homepage": "https://github.com/thlorenz/asyncreduce",
   "dependencies": {
     "runnel": "~0.5.0"
   },
@@ -33,7 +33,7 @@
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/thlorenz/async-reduce/blob/master/LICENSE"
+    "url": "https://github.com/thlorenz/asyncreduce/blob/master/LICENSE"
   },
   "engine": {
     "node": ">=0.6"
