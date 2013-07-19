@@ -5,7 +5,7 @@ Reduce an array of values via an asynchronous function.
 ```js
 var fs = require('fs');
 var path = require('path');
-var asyncReduce = require('asyncreduce);
+var asyncReduce = require('asyncreduce');
 
 asyncReduce(
     [ '.gitignore', '.jshintrc', '.travis.yml', 'index.js', 'Readme.md' ]
