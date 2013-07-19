@@ -1,6 +1,6 @@
 {
   "name": "asyncreduce",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reduce an array of values via an asynchronous function.",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,17 @@
     "tap": "~0.4.3",
     "browserify": "~2.25.0"
   },
-  "keywords": [ "async", "reduce", "accumulate", "accumulator", "browser", "browserify", "iterate", "iterator", "initial" ],
+  "keywords": [
+    "async",
+    "reduce",
+    "accumulate",
+    "accumulator",
+    "browser",
+    "browserify",
+    "iterate",
+    "iterator",
+    "initial"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
