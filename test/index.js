@@ -19,7 +19,7 @@ if (typeof window === 'undefined') {
           fs.stat(p, function (err, stat) {
             if (err) return cb(err);
 
-            acc[file] = stat.mode;
+            acc[file] = (stat.mode + '').slice(0, 2)
             cb(null, acc);
           });
         }
@@ -27,10 +27,10 @@ if (typeof window === 'undefined') {
           t.notOk(err, 'no error')
           t.deepEqual(
               acc
-            , { test: 16877,
-                examples: 16877,
-                '.travis.yml': 33188,
-                'index.js': 33188 }
+            , { test: '16',
+                examples: '16',
+                '.travis.yml': '33',
+                'index.js': '33' }
           )
         }
     )
