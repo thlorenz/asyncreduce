@@ -27,6 +27,11 @@ asyncReduce(
 );
 ```
 
+## Features
+
+- super small library built on top of also quite small [runnel](https://github.com/thlorenz/runnel)
+- since runnel `try/catch`es and bubbles errors and reports with detailed stack traces, so does asyncreduce
+
 ## Installation
 
     npm install asyncreduce
