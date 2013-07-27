@@ -7,7 +7,7 @@ var fs = require('fs');
 var path = require('path');
 var asyncReduce = require('../');
 
-if (typeof window === 'undefined') {
+if (!process.browser) {
   test('\nreducing files to a hash with their modes', function (t) {
     t.plan(2)
     asyncReduce(
