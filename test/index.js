@@ -7,7 +7,7 @@ var fs = require('fs');
 var path = require('path');
 var asyncReduce = require('../');
 
-if (!process.browser) {
+if (!process.browser && typeof window === 'undefined') {
   test('\nreducing files to a hash with their modes', function (t) {
     t.plan(2)
     asyncReduce(
@@ -51,7 +51,7 @@ test('\nsimulate reducing files to a hash with their modes', function (t) {
     , function size (acc, file, cb) {
         var fileSize = sizes[file]
         acc[file] = fileSize;
-        setTimeout(cb.bind(null, null, acc), 5);
+        setTimeout(function () { cb( null, acc) }, 5);
       }
     , function done (err, acc) {
         t.notOk(err, 'no error')
