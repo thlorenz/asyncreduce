@@ -80,16 +80,8 @@ test('\nargument validation', function (t) {
     , /iterator must be a function/
   )
   t.throws(
-      function () { asyncReduce([1, 2], seed, function (item, cb) { /* forgot acc */ }, validDone) }
-    , /iterator must take at least 3 arguments/
-  )
-  t.throws(
       function () { asyncReduce([1, 2], seed, validIterator, '') }
     , /done must be a function/
-  )
-  t.throws(
-      function () { asyncReduce([1, 2], seed, validIterator, function (acc) { /* forgot err */ }) }
-    , /done must take at least 2 arguments/
   )
   t.end()
 })

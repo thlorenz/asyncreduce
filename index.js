@@ -2,16 +2,6 @@
 
 var runnel = require('runnel');
 
-function validate(items, seed, iterator, done) {
-  if (!Array.isArray(items)) throw new Error('items must be an Array');
-
-  if (typeof iterator !== 'function') throw new Error('iterator must be a function');
-  if (iterator.length < 3) throw new Error('iterator must take at least 3 arguments, the accumulator, current itema and callback');
-
-  if (typeof done !== 'function') throw new Error('done must be a function');
-  if (done.length < 2) throw new Error('done must take at least 2 arguments, the error, and final value');
-}
-
 /**
  * Calls provided async iterator function with the accumulator and each item.
  * When all items have been iterated over calls done with a possible error or the final value of the accumulator.
@@ -24,7 +14,10 @@ function validate(items, seed, iterator, done) {
  * @param done {Function} function (err, acc) {} - called with final accumulated value or an error if one occurred
  */
 var asyncReduce = module.exports = function (items, seed, iterator, done) {
-  validate(items, seed, iterator, done);
+  if (!Array.isArray(items)) throw new Error('items must be an Array');
+
+  if (typeof iterator !== 'function') throw new Error('iterator must be a function');
+  if (typeof done !== 'function') throw new Error('done must be a function');
 
   var tasks = items.map(function (item) {
     return function (acc, cb) {
