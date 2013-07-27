@@ -7,9 +7,10 @@
     "test-main": "tap test/*.js",
     "test-0.8": "nave use 0.8 npm run test-main",
     "test-0.10": "nave use 0.10 npm run test-main",
-    "test-all": "npm run test-main && npm run test-0.8 && npm run test-0.10",
+    "test-all": "npm run test-main && npm run test-0.8 && npm run test-0.10 && npm run tape",
     "test": "if [ -e $TRAVIS ]; then npm run test-all; else npm run test-main; fi",
-    "tape": "browserify --debug ./test/*.js > ./test/browser/bundle.js && open test/browser/index.html"
+    "tape": "testling -x open",
+    "tape-dev": "browserify --debug ./test/*.js > ./test/browser/bundle.js && open test/browser/index.html"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
     "nave": "~0.4.3",
     "tape": "~1.0.4",
     "tap": "~0.4.3",
-    "browserify": "~2.25.0"
+    "browserify": "~2.25.0",
+    "testling": "~1.5.1"
   },
   "keywords": [
     "async",
