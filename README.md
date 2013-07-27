@@ -1,5 +1,7 @@
 # asyncreduce [![build status](https://secure.travis-ci.org/thlorenz/asyncreduce.png)](http://travis-ci.org/thlorenz/asyncreduce)
 
+[![testling badge](https://ci.testling.com/thlorenz/asyncreduce.png)](https://ci.testling.com/thlorenz/asyncreduce)
+
 Reduce an array of values via an asynchronous function.
 
 ```js
